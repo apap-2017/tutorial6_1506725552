@@ -25,6 +25,7 @@ public class StudentController
     @RequestMapping("/")
     public String index ()
     {
+    	studentDAO.addStudent(null);
         return "index";
     }
 
