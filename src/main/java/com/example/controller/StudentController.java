@@ -23,9 +23,9 @@ public class StudentController
 
 
     @RequestMapping("/")
-    public String index ()
+    public String index (Model model)
     {
-    	studentDAO.addStudent(null);
+    	model.addAttribute("index_titile", "Home");
         return "index";
     }
 
