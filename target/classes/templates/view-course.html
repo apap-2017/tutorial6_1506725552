@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Insert title here</title>
-</head>
+
+<head th:replace="fragments/header :: header('Melihat Course')">
 <body>
 
 	<h3 th:text="'ID = ' + ${course.idCourse}">Course ID</h3>
