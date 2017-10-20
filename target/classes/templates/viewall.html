@@ -28,8 +28,8 @@
         		</tr>
         	</thead>
         	<tbody>
-        		<tr data-th-each="student : ${students}" th:object="${student}">
-        			<td></td>
+        		<tr data-th-each="student,iterStat : ${students}" th:object="${student}">
+        			<td data-th-text="${iterStat.index} + 1"></td>
         			<td data-th-text="*{npm}"></td>
         			<td data-th-text="*{name}"> </td>
         			<td data-th-text="*{gpa}"> </td>
